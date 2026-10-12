@@ -1,0 +1,9 @@
+# Never commit secrets or private files to this public website repo
+.env
+.env.*
+*.key
+*.pem
+*.p12
+credentials*
+*secret*
+.DS_Store
