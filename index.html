@@ -71,6 +71,11 @@ footer img{width:74px;height:74px;border-radius:50%;background:#fff;margin-botto
 footer .fn{color:#fff;font-weight:800;font-size:18px}
 @media(max-width:640px){.hero{padding:58px 16px 50px}.hero h1{font-size:30px}header.site{flex-direction:column;align-items:center;text-align:center;gap:10px}.brand{flex-direction:column;justify-content:center;text-align:center}nav.main{width:100%;justify-content:space-evenly;gap:8px}nav.main .callbtn{flex:0 0 100%;text-align:center;margin-top:6px}.hero .ctas{display:flex}.hero .ctas .btn{flex:1;text-align:center}}
 </style>
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="North Auto Sale — Used Cars for Sale in Etobicoke, ON | Safety Certified SUVs &amp; Financing">
+<meta name="twitter:description" content="North Auto Sale in Etobicoke, Toronto sells safety certified used SUVs — Honda CR-V, Mazda CX-5, Toyota Highlander, Subaru &amp; more. Financing available. 145 Belfield Rd Unit 1, Etobicoke, ON. Call 647-705-0346.">
+<meta name="twitter:image" content="https://www.northautosale.ca/images/hero.jpg">
 </head>
 <body>
 <div class="topbar">145 Belfield Rd, Unit 1 · Etobicoke, ON &nbsp;·&nbsp; <a href="tel:+16477050346">647-705-0346</a> &nbsp;·&nbsp; Mon–Fri 10–7 · Sat 11–6 · Sun Closed</div>
@@ -133,12 +138,19 @@ footer .fn{color:#fff;font-weight:800;font-size:18px}
   <p>© 2026 North Auto Sale, Etobicoke, ON. All prices CAD, plus 13% HST and licensing unless stated otherwise.</p>
 </footer>
 <script>
-document.querySelectorAll('[data-b64]').forEach(function(el){
+function loadB64(el){
   fetch(el.getAttribute('data-b64')).then(function(r){return r.text()}).then(function(t){
     var u='data:'+el.getAttribute('data-mime')+';base64,'+t.replace(/\s+/g,'');
     if(el.tagName==='IMG'){el.src=u}else{el.style.backgroundImage='url("'+u+'")'}
   }).catch(function(){});
-});
+}
+var b64els=document.querySelectorAll('[data-b64]');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){loadB64(e.target);io.unobserve(e.target);}})},{rootMargin:'300px'});
+  b64els.forEach(function(el){io.observe(el);});
+}else{b64els.forEach(loadB64);}
 </script>
+<style>@media (max-width:720px){body{padding-bottom:56px}.sticky-call{position:fixed;left:0;right:0;bottom:0;z-index:9999;display:flex;background:#101418;border-top:2px solid #b3202c;font-family:Arial,Helvetica,sans-serif}.sticky-call a{flex:1;text-align:center;color:#fff;font-weight:800;padding:15px 6px;font-size:15px;text-decoration:none}.sticky-call a.call{background:#b3202c}}@media (min-width:721px){.sticky-call{display:none}}</style>
+<div class="sticky-call"><a class="call" href="tel:+16477050346">📞 Call 647-705-0346</a><a href="https://www.google.com/maps/search/?api=1&amp;query=145+Belfield+Rd+Unit+1+Etobicoke+ON+M9W+1G8">📍 Directions</a></div>
 </body>
 </html>
