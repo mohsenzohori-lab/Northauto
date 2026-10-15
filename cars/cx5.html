@@ -30,7 +30,19 @@ article p{line-height:1.65;color:#2a333d}article li{line-height:1.6;margin-botto
 footer{background:var(--dark);color:#cfd6dd;padding:22px;text-align:center;margin-top:34px}.specs{list-style:none;padding:0;margin:14px 0}.specs li{padding:7px 0;border-bottom:1px solid var(--line)}
 .price{font-size:26px;font-weight:800;color:var(--accent)}.fax{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:22px}
 .fax a{display:inline-block;background:var(--dark);color:#fff;padding:10px 18px;border-radius:8px;font-weight:800;margin-top:8px}
-.big{width:100%;border-radius:12px;margin:12px 0}</style></head><body>
+.big{width:100%;border-radius:12px;margin:12px 0}</style>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="North Auto Sale">
+<meta property="og:title" content="2018 Mazda CX-5 Touring for Sale in Etobicoke | North Auto Sale">
+<meta property="og:description" content="Used 2018 Mazda CX-5 Touring for sale in Etobicoke, Toronto — black all-wheel-drive SUV, certified with no accidents reported, at North Auto Sale">
+<meta property="og:url" content="https://www.northautosale.ca/cars/cx5.html">
+<meta property="og:image" content="https://www.northautosale.ca/images/car-cx5.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2018 Mazda CX-5 Touring for Sale in Etobicoke | North Auto Sale">
+<meta name="twitter:description" content="Used 2018 Mazda CX-5 Touring for sale in Etobicoke, Toronto — black all-wheel-drive SUV, certified with no accidents reported, at North Auto Sale">
+<meta name="twitter:image" content="https://www.northautosale.ca/images/car-cx5.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Car", "name": "2018 Mazda CX-5 Touring", "url": "https://www.northautosale.ca/cars/cx5.html", "description": "Used 2018 Mazda CX-5 Touring for sale in Etobicoke, Toronto \u2014 black all-wheel-drive SUV, certified with no accidents reported, at North Auto Sale", "mileageFromOdometer": {"@type": "QuantitativeValue", "value": 168038, "unitCode": "KMT"}, "itemCondition": "https://schema.org/UsedCondition", "offers": {"@type": "Offer", "url": "https://www.northautosale.ca/cars/cx5.html", "priceCurrency": "CAD", "availability": "https://schema.org/SoldOut", "itemCondition": "https://schema.org/UsedCondition", "seller": {"@type": "AutoDealer", "name": "North Auto Sale", "url": "https://www.northautosale.ca/", "telephone": "+1-647-705-0346", "address": {"@type": "PostalAddress", "streetAddress": "145 Belfield Rd, Unit 1", "addressLocality": "Etobicoke", "addressRegion": "ON", "postalCode": "M9W 1G8", "addressCountry": "CA"}}, "price": 14999}, "image": "https://www.northautosale.ca/images/car-cx5.jpg", "vehicleIdentificationNumber": "JM3KFBCM0J0331378"}</script>
+</head><body>
 <div class="topbar">145 Belfield Rd, Unit 1 · Etobicoke, ON · <a href="tel:+16477050346">647-705-0346</a> · Mon–Fri 10–7 · Sat 11–6 · Sun Closed</div>
 <header class="site"><a class="brand" href="/"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/logo.png" data-mime="image/png" alt="North Auto Sale logo"><span class="name">NORTH <span>AUTO SALE</span></span></a>
 <nav class="main"><a href="/">Home</a><a href="/#inventory">Inventory</a><a href="/blog/">Blog</a><a class="callbtn" href="tel:+16477050346">Call 647-705-0346</a></nav></header>
@@ -50,11 +62,18 @@ footer{background:var(--dark);color:#cfd6dd;padding:22px;text-align:center;margi
 </div>
 <footer>© 2026 North Auto Sale · 145 Belfield Rd, Unit 1, Etobicoke, ON M9W 1G8 · 647-705-0346</footer>
 <script>
-document.querySelectorAll('[data-b64]').forEach(function(el){
+function loadB64(el){
   fetch(el.getAttribute('data-b64')).then(function(r){return r.text()}).then(function(t){
     var u='data:'+el.getAttribute('data-mime')+';base64,'+t.replace(/\s+/g,'');
     if(el.tagName==='IMG'){el.src=u}else{el.style.backgroundImage='url("'+u+'")'}
   }).catch(function(){});
-});
+}
+var b64els=document.querySelectorAll('[data-b64]');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){loadB64(e.target);io.unobserve(e.target);}})},{rootMargin:'300px'});
+  b64els.forEach(function(el){io.observe(el);});
+}else{b64els.forEach(loadB64);}
 </script>
+<style>.nas-dir{position:fixed;right:16px;bottom:16px;z-index:9999;display:inline-flex;align-items:center;gap:7px;background:#b3202c;color:#fff;font-family:Arial,Helvetica,sans-serif;font-weight:800;font-size:15px;padding:12px 18px;border-radius:999px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.35)}.nas-dir:hover{background:#8f1a24}</style>
+<a class="nas-dir" href="https://www.google.com/maps/search/?api=1&amp;query=North+Auto+Sale+145+Belfield+Rd+Etobicoke+ON" target="_blank" rel="noopener">📍 Directions</a>
 </body></html>
