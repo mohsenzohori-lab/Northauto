@@ -8,11 +8,9 @@
 .topbar{background:#0a0d10;color:#cfd6dd;font-size:13px;padding:7px 16px;text-align:center}.topbar a{color:#fff;font-weight:700}
 header.site{background:var(--dark);color:#fff;padding:10px 20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:12px;color:#fff}.brand img{height:64px;width:auto;object-fit:contain}
-.brand{position:relative;overflow:hidden}
-.brand img{animation:nas-flip 1.6s ease-in-out .35s 1 both}
-@keyframes nas-flip{0%{transform:perspective(600px) rotateY(0deg);filter:brightness(1)}45%{filter:brightness(1.6)}100%{transform:perspective(600px) rotateY(360deg);filter:brightness(1)}}
-.brand::after{content:'';position:absolute;top:0;left:-90%;width:45%;height:100%;background:linear-gradient(105deg,rgba(255,255,255,0),rgba(255,255,255,.65),rgba(255,255,255,0));transform:skewX(-20deg);animation:nas-shine 1.6s ease .35s 1 both;pointer-events:none}
-@keyframes nas-shine{to{left:140%}}
+.brand{position:relative}
+.brand::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,rgba(255,255,255,0) 42%,rgba(255,255,255,.7) 50%,rgba(255,255,255,0) 58%);background-size:300% 100%;-webkit-mask:radial-gradient(circle 32px at 32px 50%,#000 98%,transparent 100%);mask:radial-gradient(circle 32px at 32px 50%,#000 98%,transparent 100%);animation:nas-shine 1.6s ease .35s 1 both}
+@keyframes nas-shine{from{background-position:110% 0}to{background-position:-10% 0}}
 .brand .name{font-size:21px;font-weight:800}.brand .name span{color:var(--accent2)}
 nav.main{display:flex;gap:16px;align-items:center;flex-wrap:wrap}nav.main a{color:#e7ecf0;font-weight:700;font-size:15px}
 .callbtn{background:var(--accent);color:#fff!important;padding:9px 16px;border-radius:8px;font-weight:800}
