@@ -57,7 +57,7 @@ footer{background:var(--dark);color:#cfd6dd;padding:22px;text-align:center;margi
 <img class="big" id="galMain" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-01.jpg" data-mime="image/jpeg" alt="Used 2018 Mazda CX-5 GS for sale in Etobicoke, Toronto — blue SUV, $14,890 + HST at North Auto Sale">
 <button class="gal-btn prev" onclick="galMove(-1)" aria-label="Previous photo">&#8249;</button>
 <button class="gal-btn next" onclick="galMove(1)" aria-label="Next photo">&#8250;</button>
-<div class="gal-count" id="galCount">1 / 10</div>
+<div class="gal-count" id="galCount">1 / 20</div>
 <div class="gal-thumbs">
 <img class="on" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-01.jpg" data-mime="image/jpeg" alt="Used 2018 Mazda CX-5 GS for sale in Etobicoke, Toronto — blue SUV, $14,890 + HST at North Auto Sale" onclick="galShow(0)">
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-02.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — front view" onclick="galShow(1)">
@@ -69,10 +69,20 @@ footer{background:var(--dark);color:#cfd6dd;padding:22px;text-align:center;margi
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-08.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — interior, driver’s door open" onclick="galShow(7)">
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-09.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — front cabin, leather seats" onclick="galShow(8)">
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-10.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — dashboard and steering wheel" onclick="galShow(9)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-11.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — rear seats, leather" onclick="galShow(10)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-12.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — cargo area" onclick="galShow(11)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-13.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — sunroof" onclick="galShow(12)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-14.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — centre console controls" onclick="galShow(13)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-15.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — front cabin" onclick="galShow(14)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-16.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — dashboard and infotainment" onclick="galShow(15)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-17.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — gear shifter and console" onclick="galShow(16)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-18.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — steering wheel" onclick="galShow(17)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-19.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — gauge cluster" onclick="galShow(18)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/cx5blue-20.jpg" data-mime="image/jpeg" alt="2018 Mazda CX-5 GS — headlight controls" onclick="galShow(19)">
 </div>
 </div>
 <style>.gal{position:relative}.gal-btn{position:absolute;top:32%;background:rgba(0,0,0,.45);color:#fff;border:0;width:42px;height:42px;border-radius:50%;font-size:26px;line-height:1;cursor:pointer;z-index:3}.gal-btn.prev{left:10px}.gal-btn.next{right:10px}.gal-count{position:absolute;top:20px;right:12px;background:rgba(0,0,0,.55);color:#fff;font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px;z-index:3}.gal-thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.gal-thumbs img{width:100%;height:72px;object-fit:cover;border-radius:8px;cursor:pointer;opacity:.7}.gal-thumbs img.on{opacity:1;outline:3px solid #b3202c}@media(max-width:560px){.gal-thumbs img{height:52px}}</style>
-<script>var galIdx=0,galTotal=10;function galShow(i){var th=document.querySelectorAll('.gal-thumbs img');galIdx=((i%galTotal)+galTotal)%galTotal;var tg=th[galIdx];var m=document.getElementById('galMain');if(tg.src&&tg.src.indexOf('data:image/jpeg')===0){m.src=tg.src;}m.alt=tg.alt;document.getElementById('galCount').textContent=(galIdx+1)+' / '+galTotal;for(var j=0;j<th.length;j++){th[j].classList.toggle('on',j===galIdx);}}function galMove(d){galShow(galIdx+d);}</script>
+<script>var galIdx=0,galTotal=20;function galShow(i){var th=document.querySelectorAll('.gal-thumbs img');galIdx=((i%galTotal)+galTotal)%galTotal;var tg=th[galIdx];var m=document.getElementById('galMain');if(tg.src&&tg.src.indexOf('data:image/jpeg')===0){m.src=tg.src;}m.alt=tg.alt;document.getElementById('galCount').textContent=(galIdx+1)+' / '+galTotal;for(var j=0;j<th.length;j++){th[j].classList.toggle('on',j===galIdx);}}function galMove(d){galShow(galIdx+d);}</script>
 <h2>About this vehicle</h2>
 <p style="line-height:1.65">Deep blue CX-5 with all-wheel drive, leather seats and a sunroof — the driver’s pick of the compact SUVs, with sharp steering and a quiet cabin. Safety certified and ready for Ontario winters.</p>
 <p>Every vehicle at North Auto Sale comes safety certified with licence plate included — the only extra is 13% HST. Financing is available; ask us in person.</p>
