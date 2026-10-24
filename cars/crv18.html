@@ -57,7 +57,7 @@ footer{background:var(--dark);color:#cfd6dd;padding:22px;text-align:center;margi
 <img class="big" id="galMain" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-01.jpg" data-mime="image/jpeg" alt="Used 2018 Honda CR-V LX for sale in Etobicoke, Toronto — white SUV, $12,890 + HST at North Auto Sale">
 <button class="gal-btn prev" onclick="galMove(-1)" aria-label="Previous photo">&#8249;</button>
 <button class="gal-btn next" onclick="galMove(1)" aria-label="Next photo">&#8250;</button>
-<div class="gal-count" id="galCount">1 / 9</div>
+<div class="gal-count" id="galCount">1 / 19</div>
 <div class="gal-thumbs">
 <img class="on" src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-01.jpg" data-mime="image/jpeg" alt="Used 2018 Honda CR-V LX for sale in Etobicoke, Toronto — white SUV, $12,890 + HST at North Auto Sale" onclick="galShow(0)">
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-02.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — side profile" onclick="galShow(1)">
@@ -68,10 +68,20 @@ footer{background:var(--dark);color:#cfd6dd;padding:22px;text-align:center;margi
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-07.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — front angle" onclick="galShow(6)">
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-08.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — front view" onclick="galShow(7)">
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-09.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — interior, driver's door open" onclick="galShow(8)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-10.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — driver-side interior" onclick="galShow(9)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-11.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — front cabin from passenger side" onclick="galShow(10)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-12.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — rear seats" onclick="galShow(11)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-13.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — trunk / cargo area" onclick="galShow(12)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-14.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — infotainment screen and backup camera" onclick="galShow(13)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-15.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — steering wheel" onclick="galShow(14)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-16.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — dashboard cluster" onclick="galShow(15)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-17.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — light stalk" onclick="galShow(16)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-18.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — window switches" onclick="galShow(17)">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/crv18-19.jpg" data-mime="image/jpeg" alt="2018 Honda CR-V LX — steering wheel, second angle" onclick="galShow(18)">
 </div>
 </div>
 <style>.gal{position:relative}.gal-btn{position:absolute;top:32%;background:rgba(0,0,0,.45);color:#fff;border:0;width:42px;height:42px;border-radius:50%;font-size:26px;line-height:1;cursor:pointer;z-index:3}.gal-btn.prev{left:10px}.gal-btn.next{right:10px}.gal-count{position:absolute;top:20px;right:12px;background:rgba(0,0,0,.55);color:#fff;font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px;z-index:3}.gal-thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.gal-thumbs img{width:100%;height:72px;object-fit:cover;border-radius:8px;cursor:pointer;opacity:.7}.gal-thumbs img.on{opacity:1;outline:3px solid #b3202c}@media(max-width:560px){.gal-thumbs img{height:52px}}</style>
-<script>var galIdx=0,galTotal=9;function galShow(i){var th=document.querySelectorAll('.gal-thumbs img');galIdx=((i%galTotal)+galTotal)%galTotal;var tg=th[galIdx];var m=document.getElementById('galMain');if(tg.src&&tg.src.indexOf('data:image/jpeg')===0){m.src=tg.src;}m.alt=tg.alt;document.getElementById('galCount').textContent=(galIdx+1)+' / '+galTotal;for(var j=0;j<th.length;j++){th[j].classList.toggle('on',j===galIdx);}}function galMove(d){galShow(galIdx+d);}</script>
+<script>var galIdx=0,galTotal=19;function galShow(i){var th=document.querySelectorAll('.gal-thumbs img');galIdx=((i%galTotal)+galTotal)%galTotal;var tg=th[galIdx];var m=document.getElementById('galMain');if(tg.src&&tg.src.indexOf('data:image/jpeg')===0){m.src=tg.src;}m.alt=tg.alt;document.getElementById('galCount').textContent=(galIdx+1)+' / '+galTotal;for(var j=0;j<th.length;j++){th[j].classList.toggle('on',j===galIdx);}}function galMove(d){galShow(galIdx+d);}</script>
 <h2>About this vehicle</h2>
 <p style="line-height:1.65">The newer-generation CR-V with a roomier cabin and excellent fuel economy.</p>
 <p>Every vehicle at North Auto Sale comes safety certified with licence plate included — the only extra is 13% HST. Financing is available; ask us in person.</p>
