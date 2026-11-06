@@ -7,7 +7,10 @@
 *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}a{text-decoration:none}
 .topbar{background:#0a0d10;color:#cfd6dd;font-size:13px;padding:7px 16px;text-align:center}.topbar a{color:#fff;font-weight:700}
 header.site{background:var(--dark);color:#fff;padding:10px 20px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:12px;color:#fff}.brand img{width:56px;height:56px;object-fit:contain;border-radius:50%;background:#fff;padding:4px;box-sizing:border-box}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}.brand img{height:64px;width:auto;object-fit:contain}
+.brand{position:relative}
+.brand::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,rgba(255,255,255,0) 42%,rgba(255,255,255,.7) 50%,rgba(255,255,255,0) 58%);background-size:300% 100%;-webkit-mask:radial-gradient(circle 32px at 32px 50%,#000 98%,transparent 100%);mask:radial-gradient(circle 32px at 32px 50%,#000 98%,transparent 100%);animation:nas-shine 1.6s ease .35s 1 both}
+@keyframes nas-shine{from{background-position:110% 0}to{background-position:-10% 0}}
 .brand .name{font-size:21px;font-weight:800}.brand .name span{color:var(--accent2)}
 nav.main{display:flex;gap:16px;align-items:center;flex-wrap:wrap}nav.main a{color:#e7ecf0;font-weight:700;font-size:15px}
 .callbtn{background:var(--accent);color:#fff!important;padding:9px 16px;border-radius:8px;font-weight:800}
@@ -30,10 +33,22 @@ article p{line-height:1.65;color:#2a333d}article li{line-height:1.6;margin-botto
 footer{background:var(--dark);color:#cfd6dd;padding:22px;text-align:center;margin-top:34px}.specs{list-style:none;padding:0;margin:14px 0}.specs li{padding:7px 0;border-bottom:1px solid var(--line)}
 .price{font-size:26px;font-weight:800;color:var(--accent)}.fax{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:22px}
 .fax a{display:inline-block;background:var(--dark);color:#fff;padding:10px 18px;border-radius:8px;font-weight:800;margin-top:8px}
-.big{width:100%;border-radius:12px;margin:12px 0}</style></head><body>
+.big{width:100%;border-radius:12px;margin:12px 0}</style>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="North Auto Sale">
+<meta property="og:title" content="2019 Toyota Highlander XLE for Sale in Etobicoke | North Auto Sale">
+<meta property="og:description" content="Used 2019 Toyota Highlander XLE for sale in Etobicoke, Toronto — grey three-row all-wheel-drive SUV, certified at North Auto Sale">
+<meta property="og:url" content="https://www.northautosale.ca/cars/highlander.html">
+<meta property="og:image" content="https://www.northautosale.ca/images/car-highlander.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2019 Toyota Highlander XLE for Sale in Etobicoke | North Auto Sale">
+<meta name="twitter:description" content="Used 2019 Toyota Highlander XLE for sale in Etobicoke, Toronto — grey three-row all-wheel-drive SUV, certified at North Auto Sale">
+<meta name="twitter:image" content="https://www.northautosale.ca/images/car-highlander.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Car", "name": "2019 Toyota Highlander XLE", "url": "https://www.northautosale.ca/cars/highlander.html", "description": "Used 2019 Toyota Highlander XLE for sale in Etobicoke, Toronto \u2014 grey three-row all-wheel-drive SUV, certified at North Auto Sale", "mileageFromOdometer": {"@type": "QuantitativeValue", "value": 196684, "unitCode": "KMT"}, "itemCondition": "https://schema.org/UsedCondition", "offers": {"@type": "Offer", "url": "https://www.northautosale.ca/cars/highlander.html", "priceCurrency": "CAD", "availability": "https://schema.org/SoldOut", "itemCondition": "https://schema.org/UsedCondition", "seller": {"@type": "AutoDealer", "name": "North Auto Sale", "url": "https://www.northautosale.ca/", "telephone": "+1-647-705-0346", "address": {"@type": "PostalAddress", "streetAddress": "145 Belfield Rd, Unit 1", "addressLocality": "Etobicoke", "addressRegion": "ON", "postalCode": "M9W 1G8", "addressCountry": "CA"}}, "price": 22500}, "image": "https://www.northautosale.ca/images/car-highlander.jpg", "vehicleIdentificationNumber": "5TDJZRFH7KS712436"}</script>
+</head><body>
 <div class="topbar">145 Belfield Rd, Unit 1 · Etobicoke, ON · <a href="tel:+16477050346">647-705-0346</a> · Mon–Fri 10–7 · Sat 11–6 · Sun Closed</div>
 <header class="site"><a class="brand" href="/"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" data-b64="../images/logo.png" data-mime="image/png" alt="North Auto Sale logo"><span class="name">NORTH <span>AUTO SALE</span></span></a>
-<nav class="main"><a href="/">Home</a><a href="/#inventory">Inventory</a><a href="/blog/">Blog</a><a class="callbtn" href="tel:+16477050346">Call 647-705-0346</a></nav></header>
+<nav class="main"><a href="/">Home</a><a href="/#inventory">Inventory</a><a href="/blog/">Blog</a><a href="/financing.html">Financing</a><a class="callbtn" href="tel:+16477050346">Call 647-705-0346</a></nav></header>
 <div class="wrap">
 <a class="back" href="/#inventory">← Back to all cars</a>
 <h1>2019 Toyota Highlander XLE</h1>
@@ -46,15 +61,105 @@ footer{background:var(--dark);color:#cfd6dd;padding:22px;text-align:center;margi
 <h2>Specifications</h2>
 <ul class="specs"><li>3.5L V6 engine</li><li>Automatic transmission</li><li>All-wheel drive</li><li>196,684 km</li><li>Grey exterior, black interior</li><li>Fuel economy: 9.1 L/100 km hwy · 11.8 city</li><li>Stock #000032</li><li>VIN 5TDJZRFH7KS712436</li><li>Safety certified · Licence plate included</li></ul>
 <div class="fax"><h2 style="margin-top:0">CARFAX Report</h2><p>The CARFAX vehicle history report for this 2019 Toyota Highlander XLE is available online:</p><a href="https://vhr.carfax.ca/?id=Tc7g5G+zoMzvD4W7MuNSGK3CxFUmsarL" target="_blank" rel="noopener">View the CARFAX Report</a><p style="color:var(--muted);font-size:13px;margin-top:10px">Note: the CARFAX page may ask you to tick an "I'm not a robot" box before the report opens.</p></div>
+
+<style>
+.nas-trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:26px}
+.nas-box{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.nas-head{padding:10px 14px;font-weight:800;font-size:15px;border-bottom:1px solid var(--line);background:#eef1f4}
+.nas-head.or{background:#f26522;color:#fff;border-bottom:none}
+.nas-body{padding:12px 14px;font-size:13px}
+.nas-row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:7px 0}
+.nas-row label{color:var(--muted)}
+.nas-in{width:100px;padding:5px 7px;border:1px solid var(--line);border-radius:5px;font-size:13px;text-align:right;font-family:inherit}
+.nas-wide{width:100%;text-align:left;margin:5px 0}
+.nas-btn{display:block;width:100%;background:#2563eb;color:#fff;border:none;padding:9px;border-radius:5px;font-weight:800;font-size:14px;cursor:pointer;margin:10px 0 4px;font-family:inherit}
+.nas-btn.red{background:var(--accent)}
+.nas-res{border-top:1px solid var(--line);margin-top:10px;padding-top:8px}
+.nas-dir{color:var(--accent);font-weight:700;font-size:13px;float:right}
+.nas-call{text-align:center;font-weight:800;font-size:15px;margin-top:10px}
+.nas-note{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.45}
+.nas-map{width:100%;height:150px;border:0;border-radius:6px;margin:8px 0}
+</style>
+<div class="nas-trio">
+<div class="nas-box">
+<div class="nas-head">&#128179; Payment Calculator</div>
+<div class="nas-body">
+<div class="nas-row"><label>Vehicle Price</label><b>$22,500</b></div>
+<div class="nas-row"><label>Month Term</label><select id="nasTerm" class="nas-in"><option>36</option><option>48</option><option selected>60</option><option>72</option><option>84</option><option>96</option></select></div>
+<div class="nas-row"><label>Interest Rates</label><span>8.99 %</span></div>
+<div class="nas-row"><label>Taxes</label><span>13%</span></div>
+<div class="nas-row"><label>Deposit</label><span><input id="nasDep" class="nas-in" style="width:64px" type="number" value="20" min="0" max="100"> %</span></div>
+<div class="nas-row"><label>Trade Value</label><span>$ <input id="nasTrade" class="nas-in" style="width:74px" type="number" value="0" min="0"></span></div>
+<button class="nas-btn" type="button" id="nasCalc">Calculate Payment</button>
+<div class="nas-res">
+<div class="nas-row"><label>Amount Financed</label><b id="nasFin">&mdash;</b></div>
+<div class="nas-row"><label>Payment Amount Bi-Weekly *1</label><b id="nasBi">&mdash;</b></div>
+<div class="nas-row"><label>Monthly *2</label><b id="nasMo">&mdash;</b></div>
+</div>
+<p class="nas-note">*1 *2 Estimate only, for illustration. This is not a financing offer or approval &mdash; final terms are confirmed in person at the dealership.</p>
+</div>
+</div>
+<div class="nas-box">
+<div class="nas-head">&#128205; Location <a class="nas-dir" href="https://www.google.com/maps/dir/?api=1&amp;destination=North+Auto+Sale+145+Belfield+Rd+Unit+1+Etobicoke+ON+M9W+1G8" target="_blank" rel="noopener">Get Directions</a></div>
+<div class="nas-body">
+<b>North Auto Sale</b><br>145 Belfield Rd, Unit 1, Etobicoke, Ontario, M9W 1G8
+<iframe class="nas-map" src="https://www.google.com/maps?q=North+Auto+Sale+145+Belfield+Rd+Unit+1+Etobicoke+ON+M9W+1G8&amp;output=embed" loading="lazy" title="Map - North Auto Sale"></iframe>
+<div class="nas-call">Call us: <a href="tel:+16477050346" style="color:var(--accent)">647-705-0346</a></div>
+</div>
+</div>
+<div class="nas-box">
+<div class="nas-head or">&#8505; Request Information</div>
+<div class="nas-body">
+<form action="https://formsubmit.co/info@northautosale.ca" method="POST">
+<input type="hidden" name="_subject" value="Website inquiry - 2019 Toyota Highlander XLE">
+<input type="hidden" name="Vehicle" value="2019 Toyota Highlander XLE - $22,500 + HST">
+<input type="hidden" name="_next" value="https://www.northautosale.ca/cars/highlander.html">
+<input class="nas-in nas-wide" name="First Name" placeholder="First Name*" required>
+<input class="nas-in nas-wide" name="Last Name" placeholder="Last Name*" required>
+<input class="nas-in nas-wide" type="email" name="Email" placeholder="Email Address*" required>
+<input class="nas-in nas-wide" type="tel" name="Phone" placeholder="Phone Number*" required>
+<textarea class="nas-in nas-wide" name="Comments" rows="3">I'm interested in the 2019 Toyota Highlander XLE ($22,500 + HST). Please contact me.</textarea>
+<button class="nas-btn red" type="submit">Submit</button>
+</form>
+</div>
+</div>
+</div>
+<script>
+(function(){
+var PRICE=22500,RATE=0.0899,TAX=0.13;
+function money(x){return '$'+Math.round(x).toLocaleString('en-CA');}
+function calc(){
+var term=parseInt(document.getElementById('nasTerm').value,10);
+var depPct=parseFloat(document.getElementById('nasDep').value)||0;
+var trade=parseFloat(document.getElementById('nasTrade').value)||0;
+var fin=PRICE*(1+TAX)-PRICE*depPct/100-trade; if(fin<0)fin=0;
+var r=RATE/12,pmt=fin*r/(1-Math.pow(1+r,-term));
+document.getElementById('nasFin').textContent=money(fin);
+document.getElementById('nasMo').textContent=money(pmt);
+document.getElementById('nasBi').textContent=money(pmt*12/26);
+}
+document.getElementById('nasCalc').addEventListener('click',calc);
+['nasTerm','nasDep','nasTrade'].forEach(function(id){document.getElementById(id).addEventListener('change',calc);});
+calc();
+})();
+</script>
+
 <div class="cta">This vehicle has been SOLD. Looking for one like it? Call us — we get similar vehicles in regularly.<br><a href="tel:+16477050346">Call 647-705-0346</a></div>
 </div>
 <footer>© 2026 North Auto Sale · 145 Belfield Rd, Unit 1, Etobicoke, ON M9W 1G8 · 647-705-0346</footer>
 <script>
-document.querySelectorAll('[data-b64]').forEach(function(el){
+function loadB64(el){
   fetch(el.getAttribute('data-b64')).then(function(r){return r.text()}).then(function(t){
     var u='data:'+el.getAttribute('data-mime')+';base64,'+t.replace(/\s+/g,'');
     if(el.tagName==='IMG'){el.src=u}else{el.style.backgroundImage='url("'+u+'")'}
   }).catch(function(){});
-});
+}
+var b64els=document.querySelectorAll('[data-b64]');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){loadB64(e.target);io.unobserve(e.target);}})},{rootMargin:'300px'});
+  b64els.forEach(function(el){io.observe(el);});
+}else{b64els.forEach(loadB64);}
 </script>
+<style>.nas-dir{position:fixed;right:16px;bottom:16px;z-index:9999;display:inline-flex;align-items:center;gap:7px;background:#b3202c;color:#fff;font-family:Arial,Helvetica,sans-serif;font-weight:800;font-size:15px;padding:12px 18px;border-radius:999px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.35)}.nas-dir:hover{background:#8f1a24}</style>
+<a class="nas-dir" href="https://www.google.com/maps/dir/?api=1&amp;destination=North+Auto+Sale+145+Belfield+Rd+Unit+1+Etobicoke+ON+M9W+1G8" target="_blank" rel="noopener">📍 Directions</a>
 </body></html>
