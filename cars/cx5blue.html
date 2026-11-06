@@ -89,6 +89,89 @@ footer{background:var(--dark);color:#cfd6dd;padding:22px;text-align:center;margi
 <h2>Specifications</h2>
 <ul class="specs"><li>Automatic transmission</li><li>All-wheel drive</li><li>190,175 km</li><li>Blue exterior</li><li>Black interior</li><li>Leather seats · Sunroof · Power driver’s seat</li><li>Stock #000033</li><li>VIN JM3KFBCM4J0313711</li><li>Safety certified · Licence plate included</li></ul>
 <div class="fax"><h2 style="margin-top:0">CARFAX Report</h2><p>The CARFAX vehicle history report for this 2018 Mazda CX-5 GS is available online:</p><a href="https://vhr.carfax.ca/en-ca/?id=U1YKdMWxmzOCSxRQsgBX%2BtyMNS1ytjQ4" target="_blank" rel="noopener">View the CARFAX Report</a><p style="color:var(--muted);font-size:13px;margin-top:10px">Note: the CARFAX page may ask you to tick an "I'm not a robot" box before the report opens.</p></div>
+
+<style>
+.nas-trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:26px}
+.nas-box{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.nas-head{padding:10px 14px;font-weight:800;font-size:15px;border-bottom:1px solid var(--line);background:#eef1f4}
+.nas-head.or{background:#f26522;color:#fff;border-bottom:none}
+.nas-body{padding:12px 14px;font-size:13px}
+.nas-row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:7px 0}
+.nas-row label{color:var(--muted)}
+.nas-in{width:100px;padding:5px 7px;border:1px solid var(--line);border-radius:5px;font-size:13px;text-align:right;font-family:inherit}
+.nas-wide{width:100%;text-align:left;margin:5px 0}
+.nas-btn{display:block;width:100%;background:#2563eb;color:#fff;border:none;padding:9px;border-radius:5px;font-weight:800;font-size:14px;cursor:pointer;margin:10px 0 4px;font-family:inherit}
+.nas-btn.red{background:var(--accent)}
+.nas-res{border-top:1px solid var(--line);margin-top:10px;padding-top:8px}
+.nas-dir{color:var(--accent);font-weight:700;font-size:13px;float:right}
+.nas-call{text-align:center;font-weight:800;font-size:15px;margin-top:10px}
+.nas-note{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.45}
+.nas-map{width:100%;height:150px;border:0;border-radius:6px;margin:8px 0}
+</style>
+<div class="nas-trio">
+<div class="nas-box">
+<div class="nas-head">&#128179; Payment Calculator</div>
+<div class="nas-body">
+<div class="nas-row"><label>Vehicle Price</label><b>$14,890</b></div>
+<div class="nas-row"><label>Month Term</label><select id="nasTerm" class="nas-in"><option>36</option><option>48</option><option selected>60</option><option>72</option><option>84</option><option>96</option></select></div>
+<div class="nas-row"><label>Interest Rates</label><span>8.99 %</span></div>
+<div class="nas-row"><label>Taxes</label><span>13%</span></div>
+<div class="nas-row"><label>Deposit</label><span><input id="nasDep" class="nas-in" style="width:64px" type="number" value="20" min="0" max="100"> %</span></div>
+<div class="nas-row"><label>Trade Value</label><span>$ <input id="nasTrade" class="nas-in" style="width:74px" type="number" value="0" min="0"></span></div>
+<button class="nas-btn" type="button" id="nasCalc">Calculate Payment</button>
+<div class="nas-res">
+<div class="nas-row"><label>Amount Financed</label><b id="nasFin">&mdash;</b></div>
+<div class="nas-row"><label>Payment Amount Bi-Weekly *1</label><b id="nasBi">&mdash;</b></div>
+<div class="nas-row"><label>Monthly *2</label><b id="nasMo">&mdash;</b></div>
+</div>
+<p class="nas-note">*1 *2 Estimate only, for illustration. This is not a financing offer or approval &mdash; final terms are confirmed in person at the dealership.</p>
+</div>
+</div>
+<div class="nas-box">
+<div class="nas-head">&#128205; Location <a class="nas-dir" href="https://www.google.com/maps/dir/?api=1&amp;destination=North+Auto+Sale+145+Belfield+Rd+Unit+1+Etobicoke+ON+M9W+1G8" target="_blank" rel="noopener">Get Directions</a></div>
+<div class="nas-body">
+<b>North Auto Sale</b><br>145 Belfield Rd, Unit 1, Etobicoke, Ontario, M9W 1G8
+<iframe class="nas-map" src="https://www.google.com/maps?q=North+Auto+Sale+145+Belfield+Rd+Unit+1+Etobicoke+ON+M9W+1G8&amp;output=embed" loading="lazy" title="Map - North Auto Sale"></iframe>
+<div class="nas-call">Call us: <a href="tel:+16477050346" style="color:var(--accent)">647-705-0346</a></div>
+</div>
+</div>
+<div class="nas-box">
+<div class="nas-head or">&#8505; Request Information</div>
+<div class="nas-body">
+<form action="https://formsubmit.co/info@northautosale.ca" method="POST">
+<input type="hidden" name="_subject" value="Website inquiry - 2018 Mazda CX-5 GS">
+<input type="hidden" name="Vehicle" value="2018 Mazda CX-5 GS - $14,890 + HST">
+<input type="hidden" name="_next" value="https://www.northautosale.ca/cars/cx5blue.html">
+<input class="nas-in nas-wide" name="First Name" placeholder="First Name*" required>
+<input class="nas-in nas-wide" name="Last Name" placeholder="Last Name*" required>
+<input class="nas-in nas-wide" type="email" name="Email" placeholder="Email Address*" required>
+<input class="nas-in nas-wide" type="tel" name="Phone" placeholder="Phone Number*" required>
+<textarea class="nas-in nas-wide" name="Comments" rows="3">I'm interested in the 2018 Mazda CX-5 GS ($14,890 + HST). Please contact me.</textarea>
+<button class="nas-btn red" type="submit">Submit</button>
+</form>
+</div>
+</div>
+</div>
+<script>
+(function(){
+var PRICE=14890,RATE=0.0899,TAX=0.13;
+function money(x){return '$'+Math.round(x).toLocaleString('en-CA');}
+function calc(){
+var term=parseInt(document.getElementById('nasTerm').value,10);
+var depPct=parseFloat(document.getElementById('nasDep').value)||0;
+var trade=parseFloat(document.getElementById('nasTrade').value)||0;
+var fin=PRICE*(1+TAX)-PRICE*depPct/100-trade; if(fin<0)fin=0;
+var r=RATE/12,pmt=fin*r/(1-Math.pow(1+r,-term));
+document.getElementById('nasFin').textContent=money(fin);
+document.getElementById('nasMo').textContent=money(pmt);
+document.getElementById('nasBi').textContent=money(pmt*12/26);
+}
+document.getElementById('nasCalc').addEventListener('click',calc);
+['nasTerm','nasDep','nasTrade'].forEach(function(id){document.getElementById(id).addEventListener('change',calc);});
+calc();
+})();
+</script>
+
 <div class="cta">Come see it at 145 Belfield Rd, Unit 1, Etobicoke<br><a href="tel:+16477050346">Call 647-705-0346</a></div>
 </div>
 <footer>© 2026 North Auto Sale · 145 Belfield Rd, Unit 1, Etobicoke, ON M9W 1G8 · 647-705-0346</footer>
